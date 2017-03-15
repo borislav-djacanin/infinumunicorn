@@ -1,0 +1,28 @@
+{
+  "name": "Infinium Unicorn",
+  "description": "Wordpress Theme",
+  "main": "index.js",
+  "authors": [
+    "Borislav Đačanin"
+  ],
+  "license": "GPL-2.0",
+  "keywords": [
+    "Wordpress",
+    "Theme",
+    "Bootsrap"
+  ],
+  "homepage": "testing.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "gsap": "GreenSock-JS#^1.19.0",
+    "font-awesome": "fontawesome#^4.7.0",
+    "modernizr": "^3.3.1"
+  }
+}
