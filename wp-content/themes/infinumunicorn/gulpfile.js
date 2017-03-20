@@ -79,7 +79,7 @@ gulp.task('serve', ['scss'], function() {
     });
 
     gulp.watch("./scss/*.scss", ['scss']).on('change', browserSync.reload);
-    gulp.watch("./*.php").on('change', browserSync.reload);
+    //gulp.watch("./*.php").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['scss', 'serve']);

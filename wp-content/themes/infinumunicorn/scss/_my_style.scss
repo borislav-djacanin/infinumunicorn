@@ -1,0 +1,409 @@
+body {
+	padding-top: 40px;
+}
+
+.navbar-flex {
+	display: flex;
+}
+.navbar-flex-logo {
+	flex: 1;
+}
+.navbar-flex-menu {
+	flex: 2;
+	justify-content: flex-end;
+}
+
+.navbar-flex-menu-ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.navbar-flex-menu-ul li {
+	width: auto;
+}
+.navbar-flex-menu-ul li a {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 1.5em;
+}
+.navbar-flex-menu-ul li.active a{
+	color: $roza-light;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+.nav > li > a {
+	color: $crna;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+	color: $roza-light;
+}
+
+input.search-box-input {
+	border: none;
+}
+
+.search-box-input::placeholder {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 1.4em;
+	padding-left: 0.5em;
+}
+
+#featured-post{
+	margin-bottom: 5em;
+}
+
+.unicorn_infinum_title {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 2.5em;
+}
+
+.unicorn_infinum_title a {
+	color: $unicorn_infinum_title;
+	text-decoration: none;
+}
+.unicorn_infinum_title a:hover, .unicorn_infinum_title a:focus {
+	color: $roza-light;
+}
+
+.details-date {
+	color: $date-color;	
+}
+
+.the_excerpt {
+	clear: both;
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 1.3em;	
+}
+.view-full-post-btn {
+	color: $read-more;	
+}
+.blog-title-wrapper, .subscribe-title-wrapper {
+	max-height: 180px;
+	height: 180px;
+}
+.blog-title-wrapper {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.subscribe-title-wrapper {
+	padding-top: 3em;
+	height: 150px;
+}
+
+.blog-title, .subscribe-title {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 3em;
+	text-align: center;
+	color: $title-color;
+}
+
+.subscribe-title {
+	color: $siva;
+}
+
+.search-form {
+	text-align: center;
+}
+.category {
+	margin-bottom: 1em;
+}
+.category-detail ul, .the_excerpt_footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.category-detail ul li {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	background-color: $siva;
+}
+
+.category-detail a {
+	color: $crna;
+}
+.the_excerpt_footer ul li {
+	float: left;
+	padding-right: 15px;
+	margin-right: 10px;
+}
+.the_excerpt_footer {
+	align-self: flex-start;
+}
+.flex-parent{
+	display: flex;
+	flex-direction: column;
+	height: 600px;
+	margin-bottom: 2em;
+}
+
+.the_excerpt {
+	flex-grow: 3;
+}
+.the_excerpt_footer {
+	align-self: stretch;
+}
+footer {
+    padding: 30px 0;
+}
+
+.navigation {
+	padding-top: 3em;
+}
+
+.navigation li a {
+	color: $siva;
+	font-size: 1.4em;
+}
+
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	color: $roza-light;
+	text-decoration:none;
+}
+
+.navigation li {
+	display: inline;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+	background-color: transparent;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 12px;
+	padding: 0.75rem;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+	background-color: transparent;
+}
+.pagination-left, .pagination-middle, .pagination-right {
+	text-align: center;
+}
+
+.navigation_prev a, .navigation_next a{
+	color: $siva;	
+	font-size: 1.4em;
+	text-decoration: none;
+}
+.navigation_prev a:hover, .navigation_next a:hover {
+	color: $roza-light;
+}
+
+.subscribe-form {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+.subscribe-form-flex-email{
+	flex: 1;
+}
+.subscribe-form input[type=email] {
+	height: 50px;
+	width: 100%;
+}
+
+.subscribe-input::placeholder {
+	padding-left: 1em;
+}
+
+.subscribe-submit, .ios-button, .unicorn-owners-button {
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;	
+}
+
+.subscribe-submit {
+	background-color: $roza-light;
+}
+
+.ios-button {
+	background-color: $roza-light;
+}
+.unicorn-owners-button {
+	background-color: $siva;
+}
+.ios-button, .unicorn-owners-button {
+	padding: 1em 1em;	
+}
+.ios-button-text, .unicorn-owners-button-text, .search-box-input {
+	position: relative;
+	bottom: -3px;
+}
+
+
+.unicorn_infinum-footer {
+	padding-top: 5em;
+}
+.footer-logo, .footer-copyright {
+	padding-bottom: 1em;
+}
+.footer-copyright {
+	color: $siva;
+}
+
+.footer-links {
+	display: flex;
+	flex-direction: row;
+}
+.link-privacy {
+	padding-right: 1em;
+}
+
+.link-privacy a, .link-terms a {
+	color: $roza-light;
+	text-decoration: none;
+}
+
+.footer-social-media {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.soc-facebook, .soc-twitter, .soc-instagram {
+	padding-bottom: 1em;
+}
+
+.soc-facebook a, .soc-twitter a, .soc-instagram a {
+	color: $siva;
+	text-decoration: none;
+}
+.text-higlight {
+	color: $roza-light;
+}
+.intro-header {
+	background-size: cover;
+	height: 700px;
+}
+.overlay {
+	background-color: rgba( 0, 0, 0, 0.15 );
+	background-size: cover;
+	height: 700px;
+
+}
+.post-heading {
+	position: relative;
+	height: 700px;
+	max-height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+h1.unicorn_infinum_single_post_title {
+	text-align: center;
+}
+.unicorn_infinum_single_post_meta {
+}
+.link-back-to-blog {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: stretch;
+	justify-content: flex-end;
+	padding-bottom: 2em;
+}
+
+.unicorn_infinum_single_post_title {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+	font-size: 3.5em;
+	color: $white;
+}
+.unicorn_infinum_single_post_meta {
+	padding-top: 2em;
+	color: $white;
+}
+.unicorn_infinum_single_post_meta a, .link-back-to-blog a {
+	color: $white;
+}
+.unicorn_infinum_single_post_main_content {
+	padding-top: 3em;
+}
+
+.unicorn_infinum_single_post_main_content p, .unicorn_infinum_single_post_main_content h3, .proba {
+	font-family: "museo_sans_rounded500", Arial, sans-serif;
+}
+
+
+.unicorn_infinum_single_post_main_content p {
+	font-size: 2em;
+}
+.unicorn_infinum_single_post_main_content h3 {
+	clear: both;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 3em;
+}
+span.widget-text-left, span.widget-text-right {
+	position: relative;
+	max-width: 400px;
+	width: 400px;
+	margin: 1em;
+	text-align: center;
+	max-width: 400px;
+	width: 400px;
+	margin: 1em;
+	text-align: center;
+	color: $roza-light;
+	font-size: 2em;
+}
+span.widget-text-right {
+	left: 200px;
+	float: right;
+}
+
+span.widget-text-left {
+	right: 200px;
+	float: left;
+	font-size: 1em;
+}
+img.alignleft {
+	position: relative;
+	right: 125px;
+}
+.random-post .unicorn_infinum_title {
+	font-size: 2em;
+	padding-top: 0;
+}
+.random-post p {
+	font-size: 1em;
+}
+figure img {
+	width: 100%;
+}
+.news-taxonomy {
+	padding-bottom: 2em;
+}
+.news-taxonomy h3{
+	font-size: 2em;
+}
+.news-taxonomy p {
+	font-size: 1em;
+}

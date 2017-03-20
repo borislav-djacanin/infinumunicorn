@@ -7,13 +7,16 @@ function unicorn_infinum_boki_dj_rw_title( $title, $sep, $seplocation ) {
 	// Don't affect in feeds.
 	if ( is_feed() ) return $title;
 
+/*
+	return $title;
+
 	// Add the blog's name
 	if ( 'right' == $seplocation ) {
 		$title .= get_bloginfo( 'name' );
 	} else {
 		$title = get_bloginfo( 'name' ) . $title;
 	}
-
+*/
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 

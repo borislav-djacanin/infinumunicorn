@@ -49,15 +49,15 @@ add_filter( 'the_generator', 'unicorn_infinum_boki_dj_rss_version' );
 // Replace the default ellipsis
 
 function unicorn_infinum_boki_dj_custom_excerpt_more( $excerpt ) {
-	return str_replace( '[&hellip;]', '', $excerpt );
+	return str_replace( '[&hellip;]', '... ', $excerpt );
 }
-add_filter( 'wp_trim_excerpt', 'unicorn_infinum_boki_dj_custom_excerpt_more' );
+//add_filter( 'wp_trim_excerpt', 'unicorn_infinum_boki_dj_custom_excerpt_more' );
 
 
 /* Modify the read more link on the_excerpt() */
  
 function unicorn_infinum_boki_dj_excerpt_length($length) {
-    return 55;
+    return 80;
 }
 add_filter('excerpt_length', 'unicorn_infinum_boki_dj_excerpt_length');
  
@@ -65,8 +65,9 @@ add_filter('excerpt_length', 'unicorn_infinum_boki_dj_excerpt_length');
  
 function unicorn_infinum_boki_dj_excerpt_more($excerpt) {
     global $post;
-    return '<div class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="view-full-post-btn">Read more...</a></div>';
+    return '<span class="view-full-post"><a href="'. get_permalink($post->ID) . '" class="view-full-post-btn">  Read more</a></span>';
 }
 add_filter('excerpt_more', 'unicorn_infinum_boki_dj_excerpt_more');
+
 
 ?>

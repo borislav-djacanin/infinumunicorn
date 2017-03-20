@@ -19,7 +19,7 @@ function unicorn_infinum_boki_dj_remove_meta_boxes_from_page_admin() {
 function unicorn_infinum_boki_remove_editor_from_admin_pages() {
 	remove_post_type_support('page', 'editor');
 }
-add_action('admin_init', 'unicorn_infinum_boki_remove_editor_from_admin_pages');
+//add_action('admin_init', 'unicorn_infinum_boki_remove_editor_from_admin_pages');
 
 
 function unicorn_infinum_boki_dj_add_meta_boxes_page() {

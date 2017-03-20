@@ -3,9 +3,10 @@
 	/************* THUMBNAIL SIZE OPTIONS *************/
 
 	// Thumbnail sizes
-	add_image_size( 'unicorn_infinum-thumb-600', 600, 150, true );
+	add_image_size( 'unicorn_infinum-thumb-600', 600, '', true );
 	add_image_size( 'unicorn_infinum-thumb-300', 300, 100, true );
-	add_image_size( 'unicorn_infinum-large', 700, '', true ); // Large Thumbnail
+	add_image_size( 'unicorn_infinum-thumb-400', 400, '', true ); // Large Thumbnail
+	add_image_size( 'unicorn_infinum-large', 700, '', true ); // Large Thumbnail	
 	add_image_size( 'unicorn_infinum-medium', 250, '', true ); // Medium Thumbnail
 	add_image_size( 'unicorn_infinum-small', 120, '', true ); // Small Thumbnail
 	add_image_size( 'unicorn_infinum-custom-size', 700, 200, true ); // Custom Thumbnail Size call using 
@@ -34,13 +35,14 @@
 
 	function unicorn_infinum_boki_dj__custom_image_sizes( $sizes ) {
 		return array_merge( $sizes, array(
-		    'lunicorn_infinum-logo' 		=> __('Logo'),                              
-			'lunicorn_infinum-small' 		=> __('small image'),
-			'lunicorn_infinum-medium' 		=> __('medium image'),
-			'lunicorn_infinum-large' 		=> __('large image'),
-			'lunicorn_infinum-thumb-600' 	=> __('600px by 150px'),
-			'lunicorn_infinum-thumb-300' 	=> __('300px by 100px'),
-			'lunicorn_infinum-custom-size' 	=> __('Custom size'),
+		    'unicorn_infinum-logo' 			=> __('Logo'),                              
+			'unicorn_infinum-small' 		=> __('small image'),
+			'unicorn_infinum-medium' 		=> __('medium image'),
+			'unicorn_infinum-large' 		=> __('large image'),
+			'unicorn_infinum-thumb-600' 	=> __('600px'),
+			'unicorn_infinum-thumb-300' 	=> __('300px by 100px'),
+			'unicorn_infinum-thumb-400' 	=> __('400px'),
+			'unicorn_infinum-custom-size' 	=> __('Custom size'),
 	    ) );
 	}
 
